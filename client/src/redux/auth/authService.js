@@ -20,7 +20,7 @@ const changePassword = async (userData, token) => {
     },
   }
   const response = await axios.post(
-    'http://localhost:1337/api/auth/password_secure',
+    API_URL + 'password_secure',
     userData,
     config,
   )
